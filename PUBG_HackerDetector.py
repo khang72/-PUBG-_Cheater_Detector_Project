@@ -22,12 +22,13 @@ X1 = []
 X2 = []
 X3 = []
 X4 = []
+X5 = []
 X = []
 Damage=[]
 Head  =[]
 Long  =[]
 Kill  =[]
-KDA   =[]
+TimeS   =[]
 
 def ExpectedValue(List,Range):
     avg = 0
@@ -45,6 +46,7 @@ for a in Match:
         Head.append(player[i].headshot_kills)
         Long.append(player[i].longest_kill)
         Kill.append(player[i].kills)
+        TimeS.append(player[i].time_survived)
         
 for a in Damage:
     X1.append(a/ExpectedValue(Damage,len(Damage)))
@@ -54,12 +56,15 @@ for a in Kill:
     X3.append(a/ExpectedValue(Kill,len(Kill)))
 for a in Long:
     X4.append(a/ExpectedValue(Long,len(Long)))
+for a in TimeS:
+    X5.append(a/ExpectedValue(TimeS,len(TimeS)))
 #print(api.players_from_names(Name[0]).get_current_season().game_mode_stats("squad","fpp"))  
 print(Name)
-print(X1)
-print(X2)
-print(X3)
-print(X4)
+#print(X1)
+#print(X2)
+#print(X3)
+#print(X4)
+#print(X5)
 for i in range(4):
-    X.append(X1[i] + X2[i] + X3[i] + X4[i])
+    X.append((X1[i] + X2[i] + X3[i] + X4[i] + X5[i])/5)
 print(X)
