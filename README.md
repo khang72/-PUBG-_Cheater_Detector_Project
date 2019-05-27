@@ -10,6 +10,9 @@ Instructor: Professor Kim Seonglyun / Email: slkim@yonsei.ac.kr
 ## Installation
 This project is using PUBG API tools. To see the documentation of the [PUBG API, click here](https://documentation.pubg.com/en/introduction.html)
 
+A PUBG API key is needed for this project. To obtain the API key, [apply in this link](https://developer.pubg.com/). 
+After getting the API key, create a file named "PUBGAPIKEY.txt" and paste the API key in this text file. Then, you can run this source code
+
 This project is working on Linux Machines (specifically in this case we use Ubuntu 18.10)
 To check your Ubuntu version, use
 ```
