@@ -143,3 +143,6 @@ Since X~N(m, σ’), manipulate the equation into the standard normal distributi
 P(Z≥=0.1. Hence T=0.1285σ’+m.
 Now that we have the threshold performance value T, search for all players above T.
 These players are considered as suspicious players.
+![image021](https://user-images.githubusercontent.com/15692058/58432892-a8db6380-80ef-11e9-8725-812cde185735.png)
+![image020](https://user-images.githubusercontent.com/15692058/58432918-c1e41480-80ef-11e9-9041-5beeffafaaac.png)
+
