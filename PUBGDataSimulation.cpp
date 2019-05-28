@@ -33,6 +33,10 @@ main(){
     }
 
     sort (FSigX.begin(),FSigX.end());
+    
+    for( int i = 0 ; i < MATCHNUM; i++)
+         printf(“%lf\n”,FSigX[i]);
+
 
     for( int i = 0 ; i < MATCHNUM; i++){
         double MaxSig = sqrt(2 * (-Alpha[i]*2*FSig[i]*FSig[i]) / NUM[i]);
