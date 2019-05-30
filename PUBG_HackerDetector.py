@@ -134,6 +134,5 @@ while runtime < 100: #Number of matches will be tested
     runtime += 1
     
     for i in X:
-        InDex = X.index(i);
-        if i > 1 + 0.1285 * math.sqrt( 2 * ( -Exp[InDex] * 2 * Devi[InDex] * Devi[InDex] ) / z ):
+        if i > 1 + 0.1285 * math.sqrt( 2 * ( -Exp * 2 * Devi * Devi ) / z ):
             print(Name[X.index(i)]) #List of suspicious players name
